@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Aquí va la información para el navegador -->
+    <meta charset="UTF-8" />
+    <meta name="description" content="Shoes for kids" />
+    <meta name="keywords" content="Shoes, Kids, Running" />
+    <meta name="author" content="Andrea Rosero" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, incitial-scale=1.0" />
+    <link rel="icon" type="image/png" href="./assets/img/logo.png" />
+    <!-- Botstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <!-- Fuente Roboto -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Kit Iconos  -->
+    <script
+      src="https://kit.fontawesome.com/3f1f63e199.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Hoja CSS de estilos -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <!-- Título en pestaña -->
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- Menú de Navegación-->
+
+    <nav class="d-flex align-items-center justify-content-between">
+      <!-- contenedor flex con datos del usuario: perfil y estado -->
+      <div class="d-flex align-items-center mx-3">
+        <i class="fa-regular fa-message fa-2x"></i>
+
+        <span class="ms-3 display-6">Games Shop</span>
+      </div>
+      <i class="fa-solid fa-bars fa-2x mx-3"></i>
+    </nav>
+
+    <!-- Sección de Filtros-->
+    <section
+      class="filtros d-flex flex-column justify-content-center text-center"
+    >
+      <span class="mb-1">Ordenar por:</span>
+      <div class="dropdown">
+        <button
+          class="btn btn-light dropdown-toggle col-9"
+          type="button"
+          id="dropdownMenuButton1"
+          data-bs-toggle="dropdown"
+          aria-expanded="false"
+        >
+          Precio
+        </button>
+        <ul class="dropdown-menu col-9" aria-labelledby="dropdownMenuButton1">
+          <li><a class="dropdown-item" href="#">Action</a></li>
+          <li><a class="dropdown-item" href="#">Another action</a></li>
+          <li><a class="dropdown-item" href="#">Something else here</a></li>
+        </ul>
+      </div>
+    </section>
+    <!-- Sección Principal de productos-->
+    <main class="d-flex flex-column justify-content-between">
+      <!-- Productos-->
+      <section class="productos">
+        <article class="producto">
+          <div class="card">
+            <img
+              src="./assets/img/1x1_NSwitch_HogwartsLegacy_image500w.jpg"
+              class="card-img-top"
+              alt="caratula hogwarts legacy"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Hogwarts Legacy</h5>
+              <p class="card-text">Nintendo Switch $ 49.990</p>
+              <a href="#" class="btn btn-danger">Comprar Ahora</a>
+            </div>
+          </div>
+        </article>
+        <article class="producto">
+          <div class="card">
+            <img
+              src="./assets/img/SQ_NSwitch_MarioAndRabbidsKingdomBattle_EU_image500w.jpg"
+              class="card-img-top"
+              alt="caratula mario rabbids"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Mario + Rabbids Kingdom Battle</h5>
+              <p class="card-text">Nintendo Switch $ 15.990</p>
+              <a href="#" class="btn btn-danger">Comprar Ahora</a>
+            </div>
+          </div>
+        </article>
+        <article class="producto">
+          <div class="card">
+            <img
+              src="./assets/img/SQ_NSwitch_LegoCityUndercover_image500w.jpg"
+              class="card-img-top"
+              alt="caratula lego city undercover"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Lego City Undercover</h5>
+              <p class="card-text">Nintendo Switch $ 19.990</p>
+              <a href="#" class="btn btn-danger">Comprar Ahora</a>
+            </div>
+          </div>
+        </article>
+        <article class="producto">
+          <div class="card">
+            <img
+              src="./assets/img/SQ_NSwitch_LegoTheIncredibles_esES_image500w.jpg"
+              class="card-img-top"
+              alt="caratula Lego los increibles"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Lego Los Increibles</h5>
+              <p class="card-text">Nintendo Switch $ 14.990</p>
+              <a href="#" class="btn btn-danger">Comprar Ahora</a>
+            </div>
+          </div>
+        </article>
+        <article class="producto">
+          <div class="card">
+            <img
+              src="./assets/img/SQ_NSwitchDS_OvercookedSpecialEdition_image500w.jpg"
+              class="card-img-top"
+              alt="caratula Overcooked 2"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Overcooked 2</h5>
+              <p class="card-text">Nintendo Switch $ 16.990</p>
+              <a href="#" class="btn btn-danger">Comprar Ahora</a>
+            </div>
+          </div>
+        </article>
+        <article class="producto">
+          <div class="card">
+            <img
+              src="./assets/img/1x1_NSwitchDS_PawfectlyDesigned_image500w.jpg"
+              class="card-img-top"
+              alt="caratula Pawfectly Designed"
+            />
+            <div class="card-body">
+              <h5 class="card-title">PAWfectly Designed</h5>
+              <p class="card-text">Nintendo Switch $ 10.990</p>
+              <a href="#" class="btn btn-danger">Comprar Ahora</a>
+            </div>
+          </div>
+        </article>
+        <article class="producto">
+          <div class="card">
+            <img
+              src="./assets/img/SQ_NSwitch_LegoStarWarsTheSkywalkerSaga_image500w.jpg"
+              class="card-img-top"
+              alt="caratula Lego Star Wars"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Lego Star Wars</h5>
+              <p class="card-text">Nintendo Switch $ 59.990</p>
+              <a href="#" class="btn btn-danger">Comprar Ahora</a>
+            </div>
+          </div>
+        </article>
+        <article class="producto">
+          <div class="card">
+            <img
+              src="./assets/img/1x1_NSwitchDS_TheSmurfsLearnAndPlay_image500w.jpg"
+              class="card-img-top"
+              alt="caratula Smurfs"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Los Pitufos</h5>
+              <p class="card-text">Nintendo Switch $ 19.990</p>
+              <a href="#" class="btn btn-danger">Comprar Ahora</a>
+            </div>
+          </div>
+        </article>
+      </section>
+      <!-- Paginación-->
+      <section class="paginacion" aria-label="Page navigation">
+        <ul class="pagination justify-content-center my-3">
+          <li class="page-item disabled">
+            <a class="page-link" href="#" aria-label="Previous">
+              <span aria-hidden="true">&laquo;</span>
+            </a>
+          </li>
+          <li class="page-item"><a class="page-link" href="#">1</a></li>
+          <li class="page-item"><a class="page-link" href="#">2</a></li>
+          <li class="page-item"><a class="page-link" href="#">3</a></li>
+          <li class="page-item">
+            <a class="page-link" href="#" aria-label="Next">
+              <span aria-hidden="true">&raquo;</span>
+            </a>
+          </li>
+        </ul>
+      </section>
+    </main>
+    <!-- Footer simple con redes sociales-->
+    <footer
+      class="d-flex flex-column text-center align-items-center justify-content-center"
+    >
+      <ul class="justify-content-center list-unstyled d-flex mt-3">
+        <li class="mx-3">
+          <a class="text-white" href="#"
+            ><i class="fa-brands fa-x-twitter fa-2x"></i
+          ></a>
+        </li>
+        <li class="mx-3">
+          <a class="text-white" href="#"
+            ><i class="fa-brands fa-instagram fa-2x"></i
+          ></a>
+        </li>
+        <li class="mx-3">
+          <a class="text-white" href="#"
+            ><i class="fa-brands fa-facebook fa-2x"></i
+          ></a>
+        </li>
+      </ul>
+      <span class="mb-3">&copy; Todos los derechos reservados</span>
+    </footer>
+  </body>
+  <!-- Script al final de la página como recomendación, en el footer, ya que se demora en cargar -->
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"
+  ></script>
+</html>
