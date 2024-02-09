@@ -86,11 +86,11 @@ footer {
       "menu-desktop filtros"
       "menu-desktop main"
       "footer main";
-    grid-template-columns: 1fr 4fr;
+    grid-template-columns: 20% 4fr;
     grid-template-rows: auto;
   }
   nav {
-    visibility: hidden;
+    display: none;
   }
   .menu-desktop {
     grid-area: 1 / 1 / 5 / 2;
