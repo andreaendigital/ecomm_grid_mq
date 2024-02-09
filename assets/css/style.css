@@ -89,6 +89,9 @@ footer {
     grid-template-columns: 1fr 4fr;
     grid-template-rows: auto;
   }
+  nav {
+    visibility: hidden;
+  }
   .menu-desktop {
     grid-area: 1 / 1 / 5 / 2;
   }
