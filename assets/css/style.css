@@ -19,7 +19,7 @@ nav {
 }
 .menu-title {
   font-weight: 600;
-  font-size: large;
+  font-size: 30px;
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -122,7 +122,7 @@ footer {
   }
   .menu-title {
     display: flex;
-    font-size: large;
+    font-size: 25px;
     margin-bottom: 4%;
   }
   .hamburguesa {
