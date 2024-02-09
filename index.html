@@ -34,17 +34,37 @@
     <title>Document</title>
   </head>
   <body>
-    <!-- Menú de Navegación-->
+    <!-- Menú de Navegación Mobile-->
 
-    <nav class="d-flex align-items-center justify-content-between">
-      <!-- contenedor flex con datos del usuario: perfil y estado -->
+    <nav class="d-flex align-items-center justify-content-between text-white">
       <div class="d-flex align-items-center mx-3">
         <i class="fa-regular fa-message fa-2x"></i>
-
         <span class="ms-3 display-6">Games Shop</span>
       </div>
       <i class="fa-solid fa-bars fa-2x mx-3"></i>
     </nav>
+
+
+      <!-- Menú de Navegación para Escritorio -->
+      <section class="menu-desktop text-white d-flex flex-column justify-content-start align-items-center">
+        <!-- Icono y Titulo  -->
+        <div class="menu-title d-flex align-items-center ">
+          <i class="fa-regular fa-message fa-2x"></i>
+          <h1 class="ms-3">Games Shop</h1>
+        </div>
+
+        <!-- Vinculos Menu -->
+        <div class="menu-links d-flex align-items-center">
+          <ul class="text-center justify-content-center text-white">
+            <li><a class="text-decoration-none text-white"   href="#"> Home </a></li>
+            <li><a class="text-decoration-none text-white" href="#"> Catálogo</a></li>
+            <li><a class="text-decoration-none text-white" href="#"> Ofertas </a></li>
+            <li><a class="text-decoration-none text-white" href="#"> Contacto </a></li>
+          </ul>
+        </section>
+
+
+
 
     <!-- Sección de Filtros-->
     <section
@@ -62,9 +82,9 @@
           Precio
         </button>
         <ul class="dropdown-menu col-9" aria-labelledby="dropdownMenuButton1">
-          <li><a class="dropdown-item" href="#">Action</a></li>
-          <li><a class="dropdown-item" href="#">Another action</a></li>
-          <li><a class="dropdown-item" href="#">Something else here</a></li>
+          <li><a class="dropdown-item" href="#">Recién Llegados</a></li>
+          <li><a class="dropdown-item" href="#">Plataforma</a></li>
+          <li><a class="dropdown-item" href="#">Saga</a></li>
         </ul>
       </div>
     </section>
