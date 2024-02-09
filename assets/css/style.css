@@ -13,10 +13,34 @@ body {
 nav {
   grid-area: menu;
   background: #e60012;
+  padding: 0;
+  align-items: center;
+
+  /* display: flex;
+  align-items: center; */
 
   /* height: 25%; */
 }
+.menu-title {
+  /* margin-top: 5%; */
+  /* margin: 5%; */
+  font-size: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 0;
+  margin-top: 8%;
+}
 
+.nav-links ul {
+  list-style: none; /*quita las pelotitas a la lista */
+  /* padding: 10px; */
+  padding: 0;
+  margin: 0;
+}
+.nav-links ul li {
+  padding: 10px;
+}
 main {
   grid-area: main;
   /* padding: 3%; */
@@ -57,29 +81,12 @@ footer {
   color: white;
 }
 
-/* Menú para escritorio  */
-.menu-desktop {
-  grid-area: menu-desktop;
-  background: #e60012;
-  font-size: 24px;
+@media (max-width: 575px) {
+  .nav-links {
+    display: none !important;
+    background: yellow;
+  }
 }
-
-.menu-title {
-  /* margin-top: 5%; */
-  margin: 5%;
-  font-size: 24px;
-}
-
-.menu-links ul {
-  list-style: none; /*quita las pelotitas a la lista */
-  /* padding: 10px; */
-  padding: 0;
-  margin: 0;
-}
-.menu-links ul li {
-  padding: 10px;
-}
-
 @media (min-width: 576px) {
   body {
     grid-template-areas:
@@ -89,13 +96,6 @@ footer {
     grid-template-columns: 20% 4fr;
     grid-template-rows: auto;
   }
-  nav {
-    display: none;
-  }
-  .menu-desktop {
-    grid-area: 1 / 1 / 5 / 2;
-  }
-
   main {
     grid-area: 2 / 2 / 6 / 6;
   }
@@ -106,7 +106,6 @@ footer {
     margin-left: 1%;
     margin-right: 1%;
   }
-
   .filtros {
     grid-area: 1 / 2 / 2 / 6;
     background: #d8d8d8;
@@ -122,9 +121,19 @@ footer {
     background: #d02a1e;
     color: white;
   }
-}
-@media (max-width: 576px) {
-  .menu-desktop {
+  nav {
+    grid-area: 1 / 1 / 5 / 2;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+  }
+  .menu-title {
+    display: flex;
+    font-size: large;
+    margin-bottom: 4%;
+  }
+  .hamburguesa {
     display: none;
   }
 }
