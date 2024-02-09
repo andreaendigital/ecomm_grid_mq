@@ -2,6 +2,7 @@ body {
   margin: 0;
   padding: 0;
   width: 100%;
+  font-family: "Noto Sans", sans-serif;
   display: grid;
   grid-template-rows: 3% 3% auto 3%;
   grid-template-areas:
@@ -65,6 +66,9 @@ main {
 .card {
   max-width: 85%;
 }
+.card-title {
+  font-weight: 600;
+}
 .producto img {
   /* asignando el tamaño al 100% del contenedor padre, se ajusta al viewport */
   width: 100%;
@@ -80,13 +84,13 @@ footer {
   background: #e60012;
   color: white;
 }
-
-@media (max-width: 575px) {
+/* hasta 576 px, mobile xs */
+@media (max-width: 576px) {
   .nav-links {
     display: none !important;
-    background: yellow;
   }
 }
+/* desde 576, sm en adelante */
 @media (min-width: 576px) {
   body {
     grid-template-areas:
