@@ -1,0 +1,1 @@
+Proyecto donde se realiza la maqueta de un E-commerce básico con el uso de CSS Grid y Media Queries para Layouts Responsivos, con anidaciones de Flexbox para la distribución de elementos dentro de cada sección.
